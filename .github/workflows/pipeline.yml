@@ -25,8 +25,14 @@ jobs:
       - name: Result build
         run: |
           cd dist && ls -l
-      - name: Deploy to production 🚀
+      - name: Production deployment 🚀
         uses: johnbeynon/render-deploy-action@v0.0.8
         with:
           service-id: ${{ secrets.RENDER_SERVICE_ID }}
           api-key: ${{ secrets.RENDER_API_KEY }}
+      - name: Production deployment status
+        uses: Bounceapp/render-action@0.6.0
+        with:
+          render-token: ${{ secrets.RENDER_API_KEY }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          service-id: ${{ secrets.RENDER_SERVICE_ID }}
