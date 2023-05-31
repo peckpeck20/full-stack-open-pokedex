@@ -23,6 +23,8 @@ jobs:
         run: npm run eslint
       - name: Build
         run: npm run build
+      - name: Test
+        run: npm test
       - name: Result build
         run: |
-          cd dist && ls -la
+          cd dist && ls -l
