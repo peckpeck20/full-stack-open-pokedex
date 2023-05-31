@@ -33,6 +33,6 @@ jobs:
       - name: Production deployment status
         uses: Bounceapp/render-action@0.6.0
         with:
-          render-token: ${{ secrets.RENDER_API_KEY }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          # render-token: ${{ secrets.RENDER_API_KEY }}
+          # github-token: ${{ secrets.GITHUB_TOKEN }}
           service-id: ${{ secrets.RENDER_SERVICE_ID }}
