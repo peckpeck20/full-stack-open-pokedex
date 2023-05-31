@@ -1,5 +1,5 @@
 name: Deployment pipeline
-run-name: pipeline started by ${{ github.actor }} 🚀
+# run-name: pipeline started by ${{ github.actor }} 🚀
 
 on:
   push:
