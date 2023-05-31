@@ -14,9 +14,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '16.20.0'
-      - name: Start build
-        run: |
-          cd dist && ls -la
+      # - name: Start build
+      #   run: |
+      #     cd dist && ls -la
       - name: Install
         run: npm install
       - name: Lint
