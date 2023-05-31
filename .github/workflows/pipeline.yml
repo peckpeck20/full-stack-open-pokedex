@@ -1,5 +1,4 @@
 name: Deployment pipeline
-# run-name: pipeline started by ${{ github.actor }} 🚀
 
 on:
   push:
@@ -7,7 +6,7 @@ on:
       - master
 
 jobs:
-  my-job:
+  Frontend:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
